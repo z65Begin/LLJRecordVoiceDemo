@@ -307,13 +307,9 @@ static const CGFloat kbtnHeight = 49.f;                         //工具条的�
 
 //播放语音
 - (void)playVoice{
-    
     [self.playView playVoiceWithUrl:[self getSavePath]];
-    
     self.navigationController.navigationBar.hidden = YES;
     self.navigationController.interactivePopGestureRecognizer.enabled = NO; // 禁止滑动返回
-
-
 }
 
 - (void)playFinishClicked{
