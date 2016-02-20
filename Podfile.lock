@@ -1,0 +1,13 @@
+PODS:
+  - Masonry (0.6.4)
+  - YYText (0.9.19)
+
+DEPENDENCIES:
+  - Masonry (~> 0.6.4)
+  - YYText (~> 0.9.19)
+
+SPEC CHECKSUMS:
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  YYText: b823b71b99b526c4a81029ecb59f3d8172ed5c9a
+
+COCOAPODS: 0.39.0

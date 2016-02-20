@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		086CFC5A06750A28A3BAE835 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CCE318F9AC3C28D733ACDD /* libPods.a */; };
+		A762566F1C7869ED0053A401 /* LLJVoicePlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A762566E1C7869ED0053A401 /* LLJVoicePlayView.m */; };
+		A7C49DD91C7749100023000A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49DD81C7749100023000A /* main.m */; };
+		A7C49DDC1C7749100023000A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49DDB1C7749100023000A /* AppDelegate.m */; };
+		A7C49DDF1C7749100023000A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49DDE1C7749100023000A /* ViewController.m */; };
+		A7C49DE21C7749100023000A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C49DE01C7749100023000A /* Main.storyboard */; };
+		A7C49DE41C7749100023000A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7C49DE31C7749100023000A /* Assets.xcassets */; };
+		A7C49DE71C7749100023000A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C49DE51C7749100023000A /* LaunchScreen.storyboard */; };
+		A7C49DF21C7749100023000A /* LLJVoiceDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49DF11C7749100023000A /* LLJVoiceDemoTests.m */; };
+		A7C49DFD1C7749100023000A /* LLJVoiceDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49DFC1C7749100023000A /* LLJVoiceDemoUITests.m */; };
+		A7C49E151C774B2F0023000A /* LLJRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49E141C774B2F0023000A /* LLJRecordViewController.m */; };
+		A7C49E1A1C7750E20023000A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C49E191C7750E20023000A /* AVFoundation.framework */; };
+		A7C49E1C1C7750EF0023000A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C49E1B1C7750EF0023000A /* CoreAudio.framework */; };
+		A7C49E221C77533F0023000A /* LLJRecordButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49E211C77533F0023000A /* LLJRecordButtonView.m */; };
+		A7C49E281C7753860023000A /* LLJRecordButtonOption.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49E271C7753860023000A /* LLJRecordButtonOption.m */; };
+		A7C49E2B1C7753A20023000A /* LLJRecordToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49E2A1C7753A20023000A /* LLJRecordToolButton.m */; };
+		A7F3CA911C77E7A700BC3E7A /* 徐佳莹我好想你.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA811C77E7A600BC3E7A /* 徐佳莹我好想你.mp3 */; };
+		A7F3CA921C77E7A700BC3E7A /* add_friend_icon_search.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA821C77E7A600BC3E7A /* add_friend_icon_search.png */; };
+		A7F3CA931C77E7A700BC3E7A /* album_unselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA831C77E7A700BC3E7A /* album_unselect@2x.png */; };
+		A7F3CA941C77E7A700BC3E7A /* CellBlueSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA841C77E7A700BC3E7A /* CellBlueSelected@2x.png */; };
+		A7F3CA951C77E7A700BC3E7A /* Fav_Note_ToolBar_Album@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA851C77E7A700BC3E7A /* Fav_Note_ToolBar_Album@2x.png */; };
+		A7F3CA961C77E7A700BC3E7A /* Fav_Note_ToolBar_Camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA861C77E7A700BC3E7A /* Fav_Note_ToolBar_Camera@2x.png */; };
+		A7F3CA971C77E7A700BC3E7A /* Fav_Note_ToolBar_Location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA871C77E7A700BC3E7A /* Fav_Note_ToolBar_Location@2x.png */; };
+		A7F3CA981C77E7A700BC3E7A /* Fav_Note_ToolBar_Voice_HL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA881C77E7A700BC3E7A /* Fav_Note_ToolBar_Voice_HL@2x.png */; };
+		A7F3CA991C77E7A700BC3E7A /* Fav_Note_ToolBar_Voice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA891C77E7A700BC3E7A /* Fav_Note_ToolBar_Voice@2x.png */; };
+		A7F3CA9A1C77E7A700BC3E7A /* Fav_VoicePlayer_Pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA8A1C77E7A700BC3E7A /* Fav_VoicePlayer_Pause@2x.png */; };
+		A7F3CA9B1C77E7A700BC3E7A /* Fav_VoicePlayer_Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA8B1C77E7A700BC3E7A /* Fav_VoicePlayer_Play@2x.png */; };
+		A7F3CA9C1C77E7A700BC3E7A /* fileicon_recording90@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA8C1C77E7A700BC3E7A /* fileicon_recording90@2x.png */; };
+		A7F3CA9D1C77E7A700BC3E7A /* note_folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA8D1C77E7A700BC3E7A /* note_folder@2x.png */; };
+		A7F3CA9E1C77E7A700BC3E7A /* note_folder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA8E1C77E7A700BC3E7A /* note_folder@3x.png */; };
+		A7F3CA9F1C77E7A700BC3E7A /* playerplan_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA8F1C77E7A700BC3E7A /* playerplan_button@2x.png */; };
+		A7F3CAA01C77E7A700BC3E7A /* playerplan_button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F3CA901C77E7A700BC3E7A /* playerplan_button@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7C49DEE1C7749100023000A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7C49DCC1C7749100023000A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7C49DD31C7749100023000A;
+			remoteInfo = LLJVoiceDemo;
+		};
+		A7C49DF91C7749100023000A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7C49DCC1C7749100023000A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7C49DD31C7749100023000A;
+			remoteInfo = LLJVoiceDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53CCE318F9AC3C28D733ACDD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A762566D1C7869ED0053A401 /* LLJVoicePlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLJVoicePlayView.h; sourceTree = "<group>"; };
+		A762566E1C7869ED0053A401 /* LLJVoicePlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLJVoicePlayView.m; sourceTree = "<group>"; };
+		A7C49DD41C7749100023000A /* LLJVoiceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLJVoiceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C49DD81C7749100023000A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7C49DDA1C7749100023000A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		A7C49DDB1C7749100023000A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
+		A7C49DDD1C7749100023000A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
+		A7C49DDE1C7749100023000A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
+		A7C49DE11C7749100023000A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7C49DE31C7749100023000A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
+		A7C49DE61C7749100023000A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7C49DE81C7749100023000A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
+		A7C49DED1C7749100023000A /* LLJVoiceDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLJVoiceDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C49DF11C7749100023000A /* LLJVoiceDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLJVoiceDemoTests.m; sourceTree = "<group>"; };
+		A7C49DF31C7749100023000A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7C49DF81C7749100023000A /* LLJVoiceDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLJVoiceDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C49DFC1C7749100023000A /* LLJVoiceDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLJVoiceDemoUITests.m; sourceTree = "<group>"; };
+		A7C49DFE1C7749100023000A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7C49E131C774B2F0023000A /* LLJRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLJRecordViewController.h; sourceTree = "<group>"; };
+		A7C49E141C774B2F0023000A /* LLJRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLJRecordViewController.m; sourceTree = "<group>"; };
+		A7C49E191C7750E20023000A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A7C49E1B1C7750EF0023000A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		A7C49E201C77533F0023000A /* LLJRecordButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLJRecordButtonView.h; sourceTree = "<group>"; };
+		A7C49E211C77533F0023000A /* LLJRecordButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLJRecordButtonView.m; sourceTree = "<group>"; };
+		A7C49E261C7753860023000A /* LLJRecordButtonOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLJRecordButtonOption.h; sourceTree = "<group>"; };
+		A7C49E271C7753860023000A /* LLJRecordButtonOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLJRecordButtonOption.m; sourceTree = "<group>"; };
+		A7C49E291C7753A20023000A /* LLJRecordToolButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLJRecordToolButton.h; sourceTree = "<group>"; };
+		A7C49E2A1C7753A20023000A /* LLJRecordToolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLJRecordToolButton.m; sourceTree = "<group>"; };
+		A7C49E2C1C7761AC0023000A /* LLJVoiceDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLJVoiceDemo.pch; sourceTree = "<group>"; };
+		A7F3CA811C77E7A600BC3E7A /* 徐佳莹我好想你.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "徐佳莹我好想你.mp3"; sourceTree = "<group>"; };
+		A7F3CA821C77E7A600BC3E7A /* add_friend_icon_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_friend_icon_search.png; sourceTree = "<group>"; };
+		A7F3CA831C77E7A700BC3E7A /* album_unselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_unselect@2x.png"; sourceTree = "<group>"; };
+		A7F3CA841C77E7A700BC3E7A /* CellBlueSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CellBlueSelected@2x.png"; sourceTree = "<group>"; };
+		A7F3CA851C77E7A700BC3E7A /* Fav_Note_ToolBar_Album@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fav_Note_ToolBar_Album@2x.png"; sourceTree = "<group>"; };
+		A7F3CA861C77E7A700BC3E7A /* Fav_Note_ToolBar_Camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fav_Note_ToolBar_Camera@2x.png"; sourceTree = "<group>"; };
+		A7F3CA871C77E7A700BC3E7A /* Fav_Note_ToolBar_Location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fav_Note_ToolBar_Location@2x.png"; sourceTree = "<group>"; };
+		A7F3CA881C77E7A700BC3E7A /* Fav_Note_ToolBar_Voice_HL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fav_Note_ToolBar_Voice_HL@2x.png"; sourceTree = "<group>"; };
+		A7F3CA891C77E7A700BC3E7A /* Fav_Note_ToolBar_Voice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fav_Note_ToolBar_Voice@2x.png"; sourceTree = "<group>"; };
+		A7F3CA8A1C77E7A700BC3E7A /* Fav_VoicePlayer_Pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fav_VoicePlayer_Pause@2x.png"; sourceTree = "<group>"; };
+		A7F3CA8B1C77E7A700BC3E7A /* Fav_VoicePlayer_Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fav_VoicePlayer_Play@2x.png"; sourceTree = "<group>"; };
+		A7F3CA8C1C77E7A700BC3E7A /* fileicon_recording90@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fileicon_recording90@2x.png"; sourceTree = "<group>"; };
+		A7F3CA8D1C77E7A700BC3E7A /* note_folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "note_folder@2x.png"; sourceTree = "<group>"; };
+		A7F3CA8E1C77E7A700BC3E7A /* note_folder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "note_folder@3x.png"; sourceTree = "<group>"; };
+		A7F3CA8F1C77E7A700BC3E7A /* playerplan_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playerplan_button@2x.png"; sourceTree = "<group>"; };
+		A7F3CA901C77E7A700BC3E7A /* playerplan_button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playerplan_button@3x.png"; sourceTree = "<group>"; };
+		C4B6D62673120FAD5E8935DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FAEFA8C4ECA33CABDD9EA143 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7C49DD11C7749100023000A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C49E1A1C7750E20023000A /* AVFoundation.framework in Frameworks */,
+				A7C49E1C1C7750EF0023000A /* CoreAudio.framework in Frameworks */,
+				086CFC5A06750A28A3BAE835 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7C49DEA1C7749100023000A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7C49DF51C7749100023000A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B54FDA6A2CE0D5705A752E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7C49E1B1C7750EF0023000A /* CoreAudio.framework */,
+				A7C49E191C7750E20023000A /* AVFoundation.framework */,
+				53CCE318F9AC3C28D733ACDD /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		453AFD47D900DFC953B0DB55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4B6D62673120FAD5E8935DC /* Pods.debug.xcconfig */,
+				FAEFA8C4ECA33CABDD9EA143 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A7C49DCB1C7749100023000A = {
+			isa = PBXGroup;
+			children = (
+				A7C49DD61C7749100023000A /* LLJVoiceDemo */,
+				A7C49DF01C7749100023000A /* LLJVoiceDemoTests */,
+				A7C49DFB1C7749100023000A /* LLJVoiceDemoUITests */,
+				A7C49DD51C7749100023000A /* Products */,
+				453AFD47D900DFC953B0DB55 /* Pods */,
+				3B54FDA6A2CE0D5705A752E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7C49DD51C7749100023000A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7C49DD41C7749100023000A /* LLJVoiceDemo.app */,
+				A7C49DED1C7749100023000A /* LLJVoiceDemoTests.xctest */,
+				A7C49DF81C7749100023000A /* LLJVoiceDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7C49DD61C7749100023000A /* LLJVoiceDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A7C49E0A1C7749610023000A /* Class */,
+				A7C49E0D1C7749610023000A /* Other */,
+				A7C49DD71C7749100023000A /* Supporting Files */,
+			);
+			path = LLJVoiceDemo;
+			sourceTree = "<group>";
+		};
+		A7C49DD71C7749100023000A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7C49E2C1C7761AC0023000A /* LLJVoiceDemo.pch */,
+				A7C49DD81C7749100023000A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7C49DF01C7749100023000A /* LLJVoiceDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7C49DF11C7749100023000A /* LLJVoiceDemoTests.m */,
+				A7C49DF31C7749100023000A /* Info.plist */,
+			);
+			path = LLJVoiceDemoTests;
+			sourceTree = "<group>";
+		};
+		A7C49DFB1C7749100023000A /* LLJVoiceDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7C49DFC1C7749100023000A /* LLJVoiceDemoUITests.m */,
+				A7C49DFE1C7749100023000A /* Info.plist */,
+			);
+			path = LLJVoiceDemoUITests;
+			sourceTree = "<group>";
+		};
+		A7C49E0A1C7749610023000A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				A7C49E0B1C7749610023000A /* Controllers */,
+				A7C49E0C1C7749610023000A /* Model */,
+				A7C49E0E1C7749610023000A /* View */,
+				A7C49E0F1C7749C30023000A /* Tools */,
+				A7F3CA801C77E75500BC3E7A /* Source */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		A7C49E0B1C7749610023000A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7C49E131C774B2F0023000A /* LLJRecordViewController.h */,
+				A7C49E141C774B2F0023000A /* LLJRecordViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A7C49E0C1C7749610023000A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7C49E0D1C7749610023000A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A7C49DDA1C7749100023000A /* AppDelegate.h */,
+				A7C49DDB1C7749100023000A /* AppDelegate.m */,
+				A7C49DDD1C7749100023000A /* ViewController.h */,
+				A7C49DDE1C7749100023000A /* ViewController.m */,
+				A7C49DE01C7749100023000A /* Main.storyboard */,
+				A7C49DE31C7749100023000A /* Assets.xcassets */,
+				A7C49DE51C7749100023000A /* LaunchScreen.storyboard */,
+				A7C49DE81C7749100023000A /* Info.plist */,
+			);
+			name = Other;
+			path = Class/Other;
+			sourceTree = "<group>";
+		};
+		A7C49E0E1C7749610023000A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A762566D1C7869ED0053A401 /* LLJVoicePlayView.h */,
+				A762566E1C7869ED0053A401 /* LLJVoicePlayView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7C49E0F1C7749C30023000A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A7C49E201C77533F0023000A /* LLJRecordButtonView.h */,
+				A7C49E211C77533F0023000A /* LLJRecordButtonView.m */,
+				A7C49E261C7753860023000A /* LLJRecordButtonOption.h */,
+				A7C49E271C7753860023000A /* LLJRecordButtonOption.m */,
+				A7C49E291C7753A20023000A /* LLJRecordToolButton.h */,
+				A7C49E2A1C7753A20023000A /* LLJRecordToolButton.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A7F3CA801C77E75500BC3E7A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A7F3CA811C77E7A600BC3E7A /* 徐佳莹我好想你.mp3 */,
+				A7F3CA821C77E7A600BC3E7A /* add_friend_icon_search.png */,
+				A7F3CA831C77E7A700BC3E7A /* album_unselect@2x.png */,
+				A7F3CA841C77E7A700BC3E7A /* CellBlueSelected@2x.png */,
+				A7F3CA851C77E7A700BC3E7A /* Fav_Note_ToolBar_Album@2x.png */,
+				A7F3CA861C77E7A700BC3E7A /* Fav_Note_ToolBar_Camera@2x.png */,
+				A7F3CA871C77E7A700BC3E7A /* Fav_Note_ToolBar_Location@2x.png */,
+				A7F3CA881C77E7A700BC3E7A /* Fav_Note_ToolBar_Voice_HL@2x.png */,
+				A7F3CA891C77E7A700BC3E7A /* Fav_Note_ToolBar_Voice@2x.png */,
+				A7F3CA8A1C77E7A700BC3E7A /* Fav_VoicePlayer_Pause@2x.png */,
+				A7F3CA8B1C77E7A700BC3E7A /* Fav_VoicePlayer_Play@2x.png */,
+				A7F3CA8C1C77E7A700BC3E7A /* fileicon_recording90@2x.png */,
+				A7F3CA8D1C77E7A700BC3E7A /* note_folder@2x.png */,
+				A7F3CA8E1C77E7A700BC3E7A /* note_folder@3x.png */,
+				A7F3CA8F1C77E7A700BC3E7A /* playerplan_button@2x.png */,
+				A7F3CA901C77E7A700BC3E7A /* playerplan_button@3x.png */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7C49DD31C7749100023000A /* LLJVoiceDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7C49E011C7749100023000A /* Build configuration list for PBXNativeTarget "LLJVoiceDemo" */;
+			buildPhases = (
+				5479AEAEB04B7BDF59945E98 /* Check Pods Manifest.lock */,
+				A7C49DD01C7749100023000A /* Sources */,
+				A7C49DD11C7749100023000A /* Frameworks */,
+				A7C49DD21C7749100023000A /* Resources */,
+				05F20C7EC73344D34C7BF1BA /* Embed Pods Frameworks */,
+				585D251F34708EF930D42AE0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLJVoiceDemo;
+			productName = LLJVoiceDemo;
+			productReference = A7C49DD41C7749100023000A /* LLJVoiceDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7C49DEC1C7749100023000A /* LLJVoiceDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7C49E041C7749100023000A /* Build configuration list for PBXNativeTarget "LLJVoiceDemoTests" */;
+			buildPhases = (
+				A7C49DE91C7749100023000A /* Sources */,
+				A7C49DEA1C7749100023000A /* Frameworks */,
+				A7C49DEB1C7749100023000A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7C49DEF1C7749100023000A /* PBXTargetDependency */,
+			);
+			name = LLJVoiceDemoTests;
+			productName = LLJVoiceDemoTests;
+			productReference = A7C49DED1C7749100023000A /* LLJVoiceDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7C49DF71C7749100023000A /* LLJVoiceDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7C49E071C7749100023000A /* Build configuration list for PBXNativeTarget "LLJVoiceDemoUITests" */;
+			buildPhases = (
+				A7C49DF41C7749100023000A /* Sources */,
+				A7C49DF51C7749100023000A /* Frameworks */,
+				A7C49DF61C7749100023000A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7C49DFA1C7749100023000A /* PBXTargetDependency */,
+			);
+			name = LLJVoiceDemoUITests;
+			productName = LLJVoiceDemoUITests;
+			productReference = A7C49DF81C7749100023000A /* LLJVoiceDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7C49DCC1C7749100023000A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ruaho;
+				TargetAttributes = {
+					A7C49DD31C7749100023000A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A7C49DEC1C7749100023000A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = A7C49DD31C7749100023000A;
+					};
+					A7C49DF71C7749100023000A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = A7C49DD31C7749100023000A;
+					};
+				};
+			};
+			buildConfigurationList = A7C49DCF1C7749100023000A /* Build configuration list for PBXProject "LLJVoiceDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7C49DCB1C7749100023000A;
+			productRefGroup = A7C49DD51C7749100023000A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7C49DD31C7749100023000A /* LLJVoiceDemo */,
+				A7C49DEC1C7749100023000A /* LLJVoiceDemoTests */,
+				A7C49DF71C7749100023000A /* LLJVoiceDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7C49DD21C7749100023000A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F3CA9D1C77E7A700BC3E7A /* note_folder@2x.png in Resources */,
+				A7C49DE71C7749100023000A /* LaunchScreen.storyboard in Resources */,
+				A7C49DE41C7749100023000A /* Assets.xcassets in Resources */,
+				A7F3CA9B1C77E7A700BC3E7A /* Fav_VoicePlayer_Play@2x.png in Resources */,
+				A7F3CA911C77E7A700BC3E7A /* 徐佳莹我好想你.mp3 in Resources */,
+				A7F3CAA01C77E7A700BC3E7A /* playerplan_button@3x.png in Resources */,
+				A7F3CA9A1C77E7A700BC3E7A /* Fav_VoicePlayer_Pause@2x.png in Resources */,
+				A7F3CA9C1C77E7A700BC3E7A /* fileicon_recording90@2x.png in Resources */,
+				A7F3CA941C77E7A700BC3E7A /* CellBlueSelected@2x.png in Resources */,
+				A7F3CA981C77E7A700BC3E7A /* Fav_Note_ToolBar_Voice_HL@2x.png in Resources */,
+				A7F3CA931C77E7A700BC3E7A /* album_unselect@2x.png in Resources */,
+				A7F3CA9E1C77E7A700BC3E7A /* note_folder@3x.png in Resources */,
+				A7F3CA961C77E7A700BC3E7A /* Fav_Note_ToolBar_Camera@2x.png in Resources */,
+				A7F3CA9F1C77E7A700BC3E7A /* playerplan_button@2x.png in Resources */,
+				A7F3CA971C77E7A700BC3E7A /* Fav_Note_ToolBar_Location@2x.png in Resources */,
+				A7C49DE21C7749100023000A /* Main.storyboard in Resources */,
+				A7F3CA951C77E7A700BC3E7A /* Fav_Note_ToolBar_Album@2x.png in Resources */,
+				A7F3CA921C77E7A700BC3E7A /* add_friend_icon_search.png in Resources */,
+				A7F3CA991C77E7A700BC3E7A /* Fav_Note_ToolBar_Voice@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7C49DEB1C7749100023000A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7C49DF61C7749100023000A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05F20C7EC73344D34C7BF1BA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5479AEAEB04B7BDF59945E98 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		585D251F34708EF930D42AE0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7C49DD01C7749100023000A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C49E151C774B2F0023000A /* LLJRecordViewController.m in Sources */,
+				A7C49DDF1C7749100023000A /* ViewController.m in Sources */,
+				A7C49DDC1C7749100023000A /* AppDelegate.m in Sources */,
+				A7C49E2B1C7753A20023000A /* LLJRecordToolButton.m in Sources */,
+				A7C49DD91C7749100023000A /* main.m in Sources */,
+				A7C49E281C7753860023000A /* LLJRecordButtonOption.m in Sources */,
+				A762566F1C7869ED0053A401 /* LLJVoicePlayView.m in Sources */,
+				A7C49E221C77533F0023000A /* LLJRecordButtonView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7C49DE91C7749100023000A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C49DF21C7749100023000A /* LLJVoiceDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7C49DF41C7749100023000A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C49DFD1C7749100023000A /* LLJVoiceDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7C49DEF1C7749100023000A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7C49DD31C7749100023000A /* LLJVoiceDemo */;
+			targetProxy = A7C49DEE1C7749100023000A /* PBXContainerItemProxy */;
+		};
+		A7C49DFA1C7749100023000A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7C49DD31C7749100023000A /* LLJVoiceDemo */;
+			targetProxy = A7C49DF91C7749100023000A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7C49DE01C7749100023000A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7C49DE11C7749100023000A /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A7C49DE51C7749100023000A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7C49DE61C7749100023000A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7C49DFF1C7749100023000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7C49E001C7749100023000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7C49E021C7749100023000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B6D62673120FAD5E8935DC /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/ruaho/Test/LLJVoiceDemo/LLJVoiceDemo/LLJVoiceDemo.pch;
+				INFOPLIST_FILE = LLJVoiceDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ruaho.LLJVoiceDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7C49E031C7749100023000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAEFA8C4ECA33CABDD9EA143 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/ruaho/Test/LLJVoiceDemo/LLJVoiceDemo/LLJVoiceDemo.pch;
+				INFOPLIST_FILE = LLJVoiceDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ruaho.LLJVoiceDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A7C49E051C7749100023000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LLJVoiceDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ruaho.LLJVoiceDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLJVoiceDemo.app/LLJVoiceDemo";
+			};
+			name = Debug;
+		};
+		A7C49E061C7749100023000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LLJVoiceDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ruaho.LLJVoiceDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLJVoiceDemo.app/LLJVoiceDemo";
+			};
+			name = Release;
+		};
+		A7C49E081C7749100023000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LLJVoiceDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ruaho.LLJVoiceDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LLJVoiceDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A7C49E091C7749100023000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LLJVoiceDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ruaho.LLJVoiceDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LLJVoiceDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7C49DCF1C7749100023000A /* Build configuration list for PBXProject "LLJVoiceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7C49DFF1C7749100023000A /* Debug */,
+				A7C49E001C7749100023000A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7C49E011C7749100023000A /* Build configuration list for PBXNativeTarget "LLJVoiceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7C49E021C7749100023000A /* Debug */,
+				A7C49E031C7749100023000A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7C49E041C7749100023000A /* Build configuration list for PBXNativeTarget "LLJVoiceDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7C49E051C7749100023000A /* Debug */,
+				A7C49E061C7749100023000A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7C49E071C7749100023000A /* Build configuration list for PBXNativeTarget "LLJVoiceDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7C49E081C7749100023000A /* Debug */,
+				A7C49E091C7749100023000A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7C49DCC1C7749100023000A /* Project object */;
+}
