@@ -16,7 +16,7 @@
 @property (nonatomic, strong) UIButton *doneButton;
 @property (nonatomic, assign) BOOL playing;
 @property (nonatomic, assign) NSInteger currentTime;
-@property (nonatomic, strong)  AVAudioPlayer *voicePlayer;      //语音播放器
+@property (nonatomic, strong) AVAudioPlayer *voicePlayer;      //语音播放器
 @property (nonatomic, strong) NSTimer *timer;
 
 @end
@@ -74,18 +74,14 @@
         make.size.mas_equalTo(CGSizeMake(35, 25));
         
     }];
-    
-//                    [_playButton setBackgroundImage:[UIImage imageNamed:@"Fav_VoicePlayer_Pause"] forState:UIControlStateNormal];
-
 }
 
 #pragma mark 初始化
 - (UIButton *)playButton{
     if (!_playButton) {
         _playButton = [[UIButton alloc]init];
-//                [_playButton setBackgroundImage:[UIImage imageNamed:@"Fav_VoicePlayer_Play"] forState:UIControlStateNormal];
+//        [_playButton setBackgroundImage:[UIImage imageNamed:@"Fav_VoicePlayer_Play"] forState:UIControlStateNormal];
         [_playButton addTarget:self action:@selector(playAction:) forControlEvents:UIControlEventTouchUpInside];
-        
     }
     return _playButton;
 }
@@ -105,8 +101,10 @@
     if (!_timeSlider) {
         _timeSlider = [[UISlider alloc]init];
         
-        UIImage *image = [UIImage imageNamed:@"playerplan_button"];
-        image = [image stretchableImageWithLeftCapWidth:10.0 topCapHeight:0.0];
+        UIImage *image = [self OriginImage:[UIImage imageNamed:@"playerplan_button"]
+                               scaleToSize:CGSizeMake(25, 25)];
+        
+//        image = [image stretchableImageWithLeftCapWidth:10.0 topCapHeight:0.0];
         
         [_timeSlider setThumbImage:image forState:UIControlStateNormal];
         [_timeSlider setMinimumTrackImage:image forState:UIControlStateNormal];
@@ -144,7 +142,23 @@
     return _doneButton;
 }
 
-#pragma mark - 转换时间格式
+- (UIImage *)OriginImage:(UIImage*)image scaleToSize:(CGSize)size{
+    
+    UIGraphicsBeginImageContext(size);//size为CGSize类型，即你所需要的图片尺寸
+    
+    [image drawInRect:CGRectMake(0,0, size.width, size.height)];
+    
+    UIImage* scaledImage =UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return scaledImage;
+    
+}
+
+#pragma mark 逻辑相关
+
+// 转换时间格式
 - (NSString *)covertTimeToString:(NSTimeInterval)seconds {
     
     NSInteger min = seconds / 60;             //分钟
@@ -186,6 +200,7 @@
         [sender setImage:[UIImage imageNamed:@"Fav_VoicePlayer_Pause"] forState:UIControlStateNormal];
     }
 }
+
 #pragma mark
 //拖拽改变进度条的值
 - (void)dragSliderChangeValue:(UISlider *)slider {
