@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		086CFC5A06750A28A3BAE835 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CCE318F9AC3C28D733ACDD /* libPods.a */; };
 		A762566F1C7869ED0053A401 /* LLJVoicePlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A762566E1C7869ED0053A401 /* LLJVoicePlayView.m */; };
+		A77C050D1C7AAB3B0091B8E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A77C05031C7AAB3B0091B8E7 /* AppDelegate.m */; };
+		A77C050E1C7AAB3B0091B8E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77C05041C7AAB3B0091B8E7 /* Assets.xcassets */; };
+		A77C050F1C7AAB3B0091B8E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77C05061C7AAB3B0091B8E7 /* LaunchScreen.storyboard */; };
+		A77C05101C7AAB3B0091B8E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77C05081C7AAB3B0091B8E7 /* Main.storyboard */; };
+		A77C05111C7AAB3B0091B8E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A77C050A1C7AAB3B0091B8E7 /* Info.plist */; };
+		A77C05121C7AAB3B0091B8E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77C050C1C7AAB3B0091B8E7 /* ViewController.m */; };
+		A77C05141C7AAB610091B8E7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A77C05131C7AAB610091B8E7 /* Default-568h@2x.png */; };
 		A7C49DD91C7749100023000A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49DD81C7749100023000A /* main.m */; };
-		A7C49DDC1C7749100023000A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49DDB1C7749100023000A /* AppDelegate.m */; };
-		A7C49DDF1C7749100023000A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49DDE1C7749100023000A /* ViewController.m */; };
-		A7C49DE21C7749100023000A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C49DE01C7749100023000A /* Main.storyboard */; };
-		A7C49DE41C7749100023000A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7C49DE31C7749100023000A /* Assets.xcassets */; };
-		A7C49DE71C7749100023000A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C49DE51C7749100023000A /* LaunchScreen.storyboard */; };
 		A7C49DF21C7749100023000A /* LLJVoiceDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49DF11C7749100023000A /* LLJVoiceDemoTests.m */; };
 		A7C49DFD1C7749100023000A /* LLJVoiceDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49DFC1C7749100023000A /* LLJVoiceDemoUITests.m */; };
 		A7C49E151C774B2F0023000A /* LLJRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C49E141C774B2F0023000A /* LLJRecordViewController.m */; };
@@ -62,16 +64,17 @@
 		53CCE318F9AC3C28D733ACDD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A762566D1C7869ED0053A401 /* LLJVoicePlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLJVoicePlayView.h; sourceTree = "<group>"; };
 		A762566E1C7869ED0053A401 /* LLJVoicePlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLJVoicePlayView.m; sourceTree = "<group>"; };
+		A77C05021C7AAB3B0091B8E7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A77C05031C7AAB3B0091B8E7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A77C05041C7AAB3B0091B8E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A77C05071C7AAB3B0091B8E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A77C05091C7AAB3B0091B8E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		A77C050A1C7AAB3B0091B8E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77C050B1C7AAB3B0091B8E7 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A77C050C1C7AAB3B0091B8E7 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A77C05131C7AAB610091B8E7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../../Default-568h@2x.png"; sourceTree = "<group>"; };
 		A7C49DD41C7749100023000A /* LLJVoiceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLJVoiceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C49DD81C7749100023000A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A7C49DDA1C7749100023000A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
-		A7C49DDB1C7749100023000A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
-		A7C49DDD1C7749100023000A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
-		A7C49DDE1C7749100023000A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
-		A7C49DE11C7749100023000A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A7C49DE31C7749100023000A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
-		A7C49DE61C7749100023000A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A7C49DE81C7749100023000A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
 		A7C49DED1C7749100023000A /* LLJVoiceDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLJVoiceDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C49DF11C7749100023000A /* LLJVoiceDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLJVoiceDemoTests.m; sourceTree = "<group>"; };
 		A7C49DF31C7749100023000A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,6 +159,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A77C05011C7AAA550091B8E7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A77C05021C7AAB3B0091B8E7 /* AppDelegate.h */,
+				A77C05031C7AAB3B0091B8E7 /* AppDelegate.m */,
+				A77C05041C7AAB3B0091B8E7 /* Assets.xcassets */,
+				A77C05051C7AAB3B0091B8E7 /* Base.lproj */,
+				A77C050A1C7AAB3B0091B8E7 /* Info.plist */,
+				A77C050B1C7AAB3B0091B8E7 /* ViewController.h */,
+				A77C050C1C7AAB3B0091B8E7 /* ViewController.m */,
+			);
+			name = Other;
+			path = Class/Other;
+			sourceTree = "<group>";
+		};
+		A77C05051C7AAB3B0091B8E7 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				A77C05061C7AAB3B0091B8E7 /* LaunchScreen.storyboard */,
+				A77C05081C7AAB3B0091B8E7 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
 		A7C49DCB1C7749100023000A = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C49E0A1C7749610023000A /* Class */,
-				A7C49E0D1C7749610023000A /* Other */,
+				A77C05011C7AAA550091B8E7 /* Other */,
 				A7C49DD71C7749100023000A /* Supporting Files */,
 			);
 			path = LLJVoiceDemo;
@@ -243,22 +270,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A7C49E0D1C7749610023000A /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				A7C49DDA1C7749100023000A /* AppDelegate.h */,
-				A7C49DDB1C7749100023000A /* AppDelegate.m */,
-				A7C49DDD1C7749100023000A /* ViewController.h */,
-				A7C49DDE1C7749100023000A /* ViewController.m */,
-				A7C49DE01C7749100023000A /* Main.storyboard */,
-				A7C49DE31C7749100023000A /* Assets.xcassets */,
-				A7C49DE51C7749100023000A /* LaunchScreen.storyboard */,
-				A7C49DE81C7749100023000A /* Info.plist */,
-			);
-			name = Other;
-			path = Class/Other;
-			sourceTree = "<group>";
-		};
 		A7C49E0E1C7749610023000A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +295,7 @@
 		A7F3CA801C77E75500BC3E7A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A77C05131C7AAB610091B8E7 /* Default-568h@2x.png */,
 				A7F3CA811C77E7A600BC3E7A /* 徐佳莹我好想你.mp3 */,
 				A7F3CA821C77E7A600BC3E7A /* add_friend_icon_search.png */,
 				A7F3CA831C77E7A700BC3E7A /* album_unselect@2x.png */,
@@ -411,22 +423,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7F3CA9D1C77E7A700BC3E7A /* note_folder@2x.png in Resources */,
-				A7C49DE71C7749100023000A /* LaunchScreen.storyboard in Resources */,
-				A7C49DE41C7749100023000A /* Assets.xcassets in Resources */,
 				A7F3CA9B1C77E7A700BC3E7A /* Fav_VoicePlayer_Play@2x.png in Resources */,
 				A7F3CA911C77E7A700BC3E7A /* 徐佳莹我好想你.mp3 in Resources */,
+				A77C05101C7AAB3B0091B8E7 /* Main.storyboard in Resources */,
 				A7F3CAA01C77E7A700BC3E7A /* playerplan_button@3x.png in Resources */,
+				A77C05141C7AAB610091B8E7 /* Default-568h@2x.png in Resources */,
 				A7F3CA9A1C77E7A700BC3E7A /* Fav_VoicePlayer_Pause@2x.png in Resources */,
 				A7F3CA9C1C77E7A700BC3E7A /* fileicon_recording90@2x.png in Resources */,
 				A7F3CA941C77E7A700BC3E7A /* CellBlueSelected@2x.png in Resources */,
+				A77C05111C7AAB3B0091B8E7 /* Info.plist in Resources */,
 				A7F3CA981C77E7A700BC3E7A /* Fav_Note_ToolBar_Voice_HL@2x.png in Resources */,
 				A7F3CA931C77E7A700BC3E7A /* album_unselect@2x.png in Resources */,
 				A7F3CA9E1C77E7A700BC3E7A /* note_folder@3x.png in Resources */,
 				A7F3CA961C77E7A700BC3E7A /* Fav_Note_ToolBar_Camera@2x.png in Resources */,
 				A7F3CA9F1C77E7A700BC3E7A /* playerplan_button@2x.png in Resources */,
+				A77C050E1C7AAB3B0091B8E7 /* Assets.xcassets in Resources */,
 				A7F3CA971C77E7A700BC3E7A /* Fav_Note_ToolBar_Location@2x.png in Resources */,
-				A7C49DE21C7749100023000A /* Main.storyboard in Resources */,
 				A7F3CA951C77E7A700BC3E7A /* Fav_Note_ToolBar_Album@2x.png in Resources */,
+				A77C050F1C7AAB3B0091B8E7 /* LaunchScreen.storyboard in Resources */,
 				A7F3CA921C77E7A700BC3E7A /* add_friend_icon_search.png in Resources */,
 				A7F3CA991C77E7A700BC3E7A /* Fav_Note_ToolBar_Voice@2x.png in Resources */,
 			);
@@ -502,8 +516,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7C49E151C774B2F0023000A /* LLJRecordViewController.m in Sources */,
-				A7C49DDF1C7749100023000A /* ViewController.m in Sources */,
-				A7C49DDC1C7749100023000A /* AppDelegate.m in Sources */,
+				A77C050D1C7AAB3B0091B8E7 /* AppDelegate.m in Sources */,
+				A77C05121C7AAB3B0091B8E7 /* ViewController.m in Sources */,
 				A7C49E2B1C7753A20023000A /* LLJRecordToolButton.m in Sources */,
 				A7C49DD91C7749100023000A /* main.m in Sources */,
 				A7C49E281C7753860023000A /* LLJRecordButtonOption.m in Sources */,
@@ -544,22 +558,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A7C49DE01C7749100023000A /* Main.storyboard */ = {
+		A77C05061C7AAB3B0091B8E7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A7C49DE11C7749100023000A /* Base */,
-			);
-			name = Main.storyboard;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		A7C49DE51C7749100023000A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7C49DE61C7749100023000A /* Base */,
+				A77C05071C7AAB3B0091B8E7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ../..;
+			sourceTree = "<group>";
+		};
+		A77C05081C7AAB3B0091B8E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A77C05091C7AAB3B0091B8E7 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -655,8 +667,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/ruaho/Test/LLJVoiceDemo/LLJVoiceDemo/LLJVoiceDemo.pch;
-				INFOPLIST_FILE = LLJVoiceDemo/Info.plist;
+				GCC_PREFIX_HEADER = /Users/ruaho/Movies/LLJ/LLJVoiceDemo/LLJVoiceDemo.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/LLJVoiceDemo/Class/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ruaho.LLJVoiceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -669,8 +681,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/ruaho/Test/LLJVoiceDemo/LLJVoiceDemo/LLJVoiceDemo.pch;
-				INFOPLIST_FILE = LLJVoiceDemo/Info.plist;
+				GCC_PREFIX_HEADER = /Users/ruaho/Movies/LLJ/LLJVoiceDemo/LLJVoiceDemo.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/LLJVoiceDemo/Class/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ruaho.LLJVoiceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
