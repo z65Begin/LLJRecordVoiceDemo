@@ -41,10 +41,17 @@ static const CGFloat kbtnHeight = 49.f;                         //工具条的�
 
 @implementation LLJRecordViewController
 
+
 - (void)viewDidLoad{
+    
+//    CGRect frame = [[UIScreen mainScreen] bounds];
+//    LLJBackgroundView *v = [[LLJBackgroundView alloc] initWithFrame:frame];
+//    
+//    [self.view addSubview:v];
     
     [self buildView];
     [self setAudioSession];
+    [self.textView becomeFirstResponder];
 }
 
 #pragma mark 构建UI
@@ -52,7 +59,7 @@ static const CGFloat kbtnHeight = 49.f;                         //工具条的�
     
     [self.textView addSubview:self.progressView];
     [self.view addSubview:self.textView];
-    [self.view addSubview:self.playView];
+//    [self.view addSubview:self.playView];
 }
 
 #pragma mark 初始化
@@ -310,6 +317,8 @@ static const CGFloat kbtnHeight = 49.f;                         //工具条的�
     [self.playView playVoiceWithUrl:[self getSavePath]];
     self.navigationController.navigationBar.hidden = YES;
     self.navigationController.interactivePopGestureRecognizer.enabled = NO; // 禁止滑动返回
+    [self.view addSubview:self.playView];
+
 }
 
 - (void)playFinishClicked{
@@ -318,6 +327,7 @@ static const CGFloat kbtnHeight = 49.f;                         //工具条的�
     
     //移除播放view
     [self.playView removeFromSuperview];
+//    self.title = @"主页";
 }
 
 @end

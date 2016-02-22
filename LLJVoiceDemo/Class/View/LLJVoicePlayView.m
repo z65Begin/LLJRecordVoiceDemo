@@ -80,7 +80,6 @@
 - (UIButton *)playButton{
     if (!_playButton) {
         _playButton = [[UIButton alloc]init];
-//        [_playButton setBackgroundImage:[UIImage imageNamed:@"Fav_VoicePlayer_Play"] forState:UIControlStateNormal];
         [_playButton addTarget:self action:@selector(playAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _playButton;
@@ -137,8 +136,8 @@
         _doneButton.titleLabel.font = [UIFont systemFontOfSize:12];
         _doneButton.titleLabel.adjustsFontSizeToFitWidth = YES;
         [_doneButton setTitleColor:[UIColor greenColor]forState:UIControlStateNormal];
+        [_doneButton addTarget:self action:@selector(playDone) forControlEvents:UIControlEventTouchUpInside];
     }
-    
     return _doneButton;
 }
 
@@ -186,7 +185,7 @@
         }
         
         //如果正在播放，图片换成暂停
-        [sender setImage:[UIImage imageNamed:@"Fav_VoicePlayer_Play"] forState:UIControlStateNormal];
+        [sender setImage:[UIImage imageNamed:@"Fav_VoicePlayer_Pause"] forState:UIControlStateNormal];
     } else {
         //如果定时器存在
         if (self.timer) {
@@ -197,10 +196,17 @@
         //暂停
         [self.voicePlayer pause];
         //如果暂停图片换成播放
-        [sender setImage:[UIImage imageNamed:@"Fav_VoicePlayer_Pause"] forState:UIControlStateNormal];
+        [sender setImage:[UIImage imageNamed:@"Fav_VoicePlayer_Play"] forState:UIControlStateNormal];
     }
 }
 
+- (void)playDone{
+    
+    [self.voicePlayer stop];
+    if ([self.delegate respondsToSelector:@selector(playFinishClicked)]) {
+        [self.delegate playFinishClicked];
+    }
+}
 #pragma mark
 //拖拽改变进度条的值
 - (void)dragSliderChangeValue:(UISlider *)slider {
@@ -220,7 +226,6 @@
     
     //修改 slider 的值
     self.timeSlider.value = time;
-    
 }
 
 - (void)playVoiceWithUrl:(NSURL *)url {
@@ -242,7 +247,7 @@
         self.rightLabel.text = [self covertTimeToString:self.voicePlayer.duration];
         self.timeSlider.maximumValue = self.voicePlayer.duration;
     }
-    [self playAction:nil];
+    [self playAction:self.playButton];
 }
 
 
